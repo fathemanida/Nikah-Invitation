@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Favas & Farhana | Nikah Invitation</title>
+    <meta
+      name="description"
+      content="Nikah invitation for Favas and Farhana."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Great+Vibes&display=swap" rel="stylesheet">
+  </head>
+  <body>
+<div class="opening-screen" id="openingScreen">
+  <div class="dark-red-screen" id="darkRedScreen">
+    <div class="tap-to-open">Tap to Open</div>
+  </div>
+</div>
+
+    <button class="music-toggle" id="musicToggle" aria-label="Toggle background music">
+      Music Off
+    </button>
+
+    <div class="scroll-indicator" id="scrollIndicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+
+    <main id="mainContent" class="hidden">
+<section class="hero section">
+  <div class="hero-overlay"></div>
+  <div class="floral floral-left" aria-hidden="true"></div>
+  <div class="floral floral-right" aria-hidden="true"></div>
+  
+  <div class="hero-inner">
+    <p class="bismillah">In the name of Allah, the Most Merciful</p>
+    
+    <h1 class="couple-names">
+      <span>Favas</span>
+      <span class="ampersand">&</span>
+      <span>Farhana</span>
+    </h1>
+    
+    <p class="invite-line">Request the honor of your presence at our Nikah</p>
+    
+    <p class="hero-date">25 April 2026 • 10:30 AM</p>
+    
+    <div class="hero-footer">
+      <p class="blessing-small">With the blessings of our families</p>
+    </div>
+  </div>
+</section>
+
+<section class="date-note section">
+  <video class="curtain-video" autoplay loop muted playsinline preload="metadata" aria-hidden="true">
+    <source src="floating curtain.mp4" type="video/mp4" />
+  </video>
+  <div class="curtain-video-overlay"></div>
+
+  <div class="date-note-content">
+    <h2 class="date-title">We said yes! Now say you’ll be there</h2>
+
+    
+    <div class="date-display">
+      <div class="date-item">
+        <span class="date-number">25</span>
+        <span class="date-label">April</span>
+      </div>
+      <div class="date-item">
+        <span class="date-number">2026</span>
+      </div>
+      <div class="date-item">
+        <span class="date-number">10:30</span>
+        <span class="date-label">Morning</span>
+      </div>
+    </div>
+
+    <div class="welcome-message show">
+      <p class="welcome-line">We warmly invite you to witness and bless our sacred union</p>
+      <div class="divider"></div>
+      <p class="nikah-time">25 April 2026 &bull; 10:30 AM</p>
+    </div>
+  </div>
+</section>
+
+<section class="countdown section">
+      <div class="floral-bg">
+      <div class="floral floral-1"></div>
+      <div class="floral floral-2"></div>
+      <div class="floral floral-3"></div>
+      <div class="floral floral-4"></div>
+      <div class="floral floral-5"></div>
+      <div class="floral floral-6"></div>
+    </div>
+  <div class="countdown-wrapper">
+
+    <div class="floral-bg">
+      <div class="floral floral-1"></div>
+      <div class="floral floral-2"></div>
+      <div class="floral floral-3"></div>
+      <div class="floral floral-4"></div>
+      <div class="floral floral-5"></div>
+      <div class="floral floral-6"></div>
+    </div>
+
+    <div class="countdown-content">
+      <h2>Countdown to Our Nikah</h2>
+      <p class="countdown-subtitle">25 April 2026 • 10:30 AM</p>
+
+      <div class="countdown-grid" id="countdown">
+        <div class="count-item">
+          <span id="days">00</span>
+          <small>Days</small>
+        </div>
+        <div class="count-item">
+          <span id="hours">00</span>
+          <small>Hours</small>
+        </div>
+        <div class="count-item">
+          <span id="minutes">00</span>
+          <small>Minutes</small>
+        </div>
+        <div class="count-item">
+          <span id="seconds">00</span>
+          <small>Seconds</small>
+        </div>
+      </div>
+
+      <p class="blessing-text">
+        With the blessings of Allah, we eagerly await this sacred day
+      </p>
+    </div>
+  </div>
+</section>
+<section class="venue section">
+  <div class="venue-bg"></div>
+  <div class="section-card venue-card">
+    <h2>Venue</h2>
+    <div class="venue-info">
+      <div class="venue-details">
+        <p class="venue-name">Mythri Auditorium</p>
+        <p class="venue-address">Edakkara, Kerala, India</p>
+        <p class="venue-date">25 April 2026 • 10:30 AM</p>
+      </div>
+      <div class="location-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+          <circle cx="12" cy="10" r="3"></circle>
+        </svg>
+      </div>
+    </div>
+    
+    <button class="map-button" onclick="openMaps()">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+        <circle cx="12" cy="10" r="3"></circle>
+      </svg>
+      Click for Directions
+    </button>
+    
+    <div class="map-wrap desktop-only">
+      <iframe
+        title="Mythri Auditorium Map"
+        src="https://www.google.com/maps?q=Mythri+Palace+Edakkara+Kerala&z=17&output=embed" 
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  </div>
+</section>
+    </main>
+
+    <audio
+      id="bgMusic"
+      loop
+      preload="none"
+      src="audio.mp3"
+    ></audio>
+
+    <script src="script.js"></script>
+<footer class="elegant-footer">
+  <div class="footer-content">
+
+    <div class="footer-main">
+      <p class="couple-name">Favas &amp; Farhana</p>
+      
+      <div class="nikah-details">
+        <p>Nikah Ceremony</p>
+        <p>25 April 2026</p>
+      </div>
+
+      <div class="footer-message">
+        <p>With the blessings of our families,<br>
+        we cordially invite you to grace us with your presence<br>
+        and prayers on this blessed occasion.</p>
+      </div>
+    </div>
+
+    <div class="created-by">
+      Created with love by the Groom's Sister
+    </div>
+
+    <div class="footer-bottom">
+      <p class="copyright">© 2026 FaFa's Nikah</p>
+    </div>
+  </div>
+</footer>
+  </body>
+</html>
