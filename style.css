@@ -853,6 +853,25 @@ h2 {
     font-size: 0.68rem;
   }
 
+  .elegant-footer {
+    padding: 1.25rem 1rem 1.1rem;
+  }
+
+  .footer-main {
+    gap: 0.65rem;
+  }
+
+  .couple-name {
+    font-size: 1.35rem;
+  }
+
+  .nikah-details p,
+  .footer-message p,
+  .created-by,
+  .copyright {
+    font-size: 0.8rem;
+  }
+
   .map-wrap iframe {
     height: 230px;
   }
