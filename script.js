@@ -51,7 +51,7 @@ document.addEventListener("keydown", (e) => {
 
 
 
-const targetDate = new Date("2026-04-25T10:30:00");
+const targetDate = new Date("2026-07-12T10:30:00");
 
 function pad(n) {
   return String(n).padStart(2, "0");
@@ -61,7 +61,13 @@ function updateCountdown() {
   const now = new Date();
   const diff = targetDate - now;
 
-  if (diff <= 0) return;
+  if (diff <= 0) {
+    document.getElementById("days").textContent = "00";
+    document.getElementById("hours").textContent = "00";
+    document.getElementById("minutes").textContent = "00";
+    document.getElementById("seconds").textContent = "00";
+    return;
+  }
 
   const days = Math.floor(diff / (1000 * 60 * 60 * 24));
   const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
@@ -77,6 +83,14 @@ function updateCountdown() {
 updateCountdown();
 setInterval(updateCountdown, 1000);
 
+window.addEventListener("beforeunload", () => {
+  bgMusic.pause();
+  bgMusic.currentTime = 0;
+});
+
+window.addEventListener("pagehide", () => {
+  bgMusic.pause();
+});
 
 musicToggle.addEventListener("click", async () => {
   try {
