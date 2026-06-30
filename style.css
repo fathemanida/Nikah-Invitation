@@ -830,6 +830,29 @@ h2 {
     opacity: 0.14;
   }
 
+  .date-display {
+    flex-wrap: nowrap;
+    gap: 0.9rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+  }
+
+  .date-item {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  .date-item:nth-child(1) .date-number,
+  .date-item:nth-child(2) .date-number,
+  .date-item:nth-child(3) .date-number {
+    font-size: 2.6rem;
+  }
+
+  .date-label {
+    font-size: 0.68rem;
+  }
+
   .map-wrap iframe {
     height: 230px;
   }
@@ -837,8 +860,6 @@ h2 {
   .scratch-row {
     gap: 0.55rem;
   }
-
-
 
   .scratch-reveal span {
     font-size: 1.15rem;

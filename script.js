@@ -92,6 +92,16 @@ window.addEventListener("pagehide", () => {
   bgMusic.pause();
 });
 
+function pauseMusicOnHide() {
+  if (document.hidden && musicPlaying) {
+    bgMusic.pause();
+    musicPlaying = false;
+    musicToggle.textContent = "Music Off";
+  }
+}
+
+document.addEventListener("visibilitychange", pauseMusicOnHide);
+
 musicToggle.addEventListener("click", async () => {
   try {
     if (!musicPlaying) {
